@@ -176,6 +176,27 @@ footer #nom{
         transform: translateY(0);
     }
 }
+
+.btn-toggle{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgb(36, 36, 36);
+    color: rgb(253, 253, 253);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav.dark {
+    color: white;
+    background: black;
+}
 @media screen and (max-width:680px) {
     nav .onglets{
         /* text-align: center;
