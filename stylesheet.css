@@ -6,7 +6,7 @@ body{
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
-
+/* nav en tete*/
 nav{
     display: flex;
     flex-wrap: wrap;
@@ -18,11 +18,13 @@ nav h1{
     color: black;
     font-family: 'Playfair Display', sans-serif;
     font-size: 30px;
+    animation: apparition .8s ease-out;
 }
 nav h4{
     margin-top: -25px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    animation: apparition 2s ease-out;
 }
-
 nav .onglets{
     margin-top: 3px;
     margin-left: 300px;
@@ -33,99 +35,144 @@ nav .onglets a{
     margin-right: 10px;
     border-bottom: 1px solid black;
     padding-bottom: 0px;
-
 }
-header{
+/* expérience */
+
+.experience{
+    background: url(images/portfolio.jpg) top/cover;
+    /* background-size: cover; */
+    padding: 40px;
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+    /* height: 500px; */
+}
+
+.experience h2{
+    margin-bottom: -10px;
+    margin-top: -35px;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.exp{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.exp h4{
+    padding-left: 30px;
+    margin-bottom: -15px;
+}
+.sinequae{
+    justify-content: center;
+}
+.lkvision{
+    justify-content: flex-end;
+}
+/* header */
+header{
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
     background: url('images/portfolio2.jpg');
     background-size: cover;
     padding: 40px;
-}
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+    border-bottom: 5px solid rgb(80, 80, 80);
 
-header h1{
+}
+header h2{
+    margin-bottom: -10px;
+    margin-top: -35px;
     font-family: 'Playfair Display', sans-serif;
-    font-size: 50px;
 }
 header h4{
-    margin-top: -30px;
-    text-align: center;
+    /* margin-top: -25px;
+    text-align: center; */
+    padding-left: 30px;
+    margin-bottom: -15px;
 }
-header button{
-    padding: 10px 20px;
-    background-color: rgb(153, 153, 153);
-    color: black;
-    border: none;
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-}
-
-.main{
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.main .content .card{
+.comp{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.softskills{
     justify-content: center;
-    margin-bottom: 20px;
 }
-
-.main .content .card .left{
-    flex: 0 0 40%;
-    padding: 20px;
-    background-color: black;
+.madskills{
+    justify-content: flex-end;
+}
+/* Formation */
+.formation{
+    border-top: 5px solid rgb(80, 80, 80);
+    background: url(images/formation.jpg);
+    background-size: cover;
+    padding: 40px;
     color: white;
+    padding-left: 10px;
 }
-.main .content .card .left h4{
-    margin-bottom: -20px;
+.formation h2{
+    margin-bottom: -10px;
+    margin-top: -35px;
+    font-family: 'Playfair Display', sans-serif;
 }
-
-.main .content .card.right{
-    flex: 0 0 60%;
+.formation h4{
+    padding-left: 30px;
+    margin-bottom: -15px;
 }
-
-.main .content .card .right img{
-    height: 300px;
-    width: 400px;
-    margin-top: 5px;
+.ecole{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-
+/* footer */
 footer{
-    margin-top: 40px;
     border-top: 5px solid rgb(80, 80, 80);
     background-color: black;
     color: white;
     padding: 30px 100px;
 }
-
 footer h1{
     font-family: 'Playfair Display', sans-serif;
 }
-
 footer h4{
     margin-top: -25px;
     border-bottom: 1px solid white;
     padding-bottom: 5px;
 }
-
 footer .contact{
     margin-top: -10px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 footer .contact .coordonnees{
-    /* margin-right: 30px; */
-    margin-left: 15%;
+    margin-right: 50px;
+    margin-left: 50px;
     padding: 10px;
 }
-
+footer #mention{
+    color: rgb(48, 48, 48);
+    margin-bottom: -25px;
+    text-align: right;
+}
+footer #nom{
+    justify-content: flex-start;
+}
+@keyframes apparition {
+    from{
+        opacity: 0;
+        transform:translateY(-200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 @media screen and (max-width:680px) {
     nav .onglets{
         /* text-align: center;
