@@ -7,13 +7,13 @@ btnToggle.addEventListener('click', () =>{
     if (nav.classList.contains('dark')){
         nav.classList.add('light')
         nav.classList.remove('dark')
-        btnToggle.innerHTML = "Dark"
+        // btnToggle.innerHTML = "Night"
 
     } else if (nav.classList.contains('light')){
 
         nav.classList.add('dark')
         nav.classList.remove('light')
-        btnToggle.innerHTML = "Light"
+        // btnToggle.innerHTML = "Light"
 
     }
 })
