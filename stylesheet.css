@@ -23,7 +23,7 @@ nav{
     justify-content: center;
     align-items: center;
     border-bottom: 5px solid rgb(80, 80, 80);
-    background: #fff;
+    background: rgb(255, 255, 255);
     color: black;
 }
 nav h1{
@@ -208,15 +208,15 @@ footer #liens i{
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50px;
-    background: #828282;
-    box-shadow:  7px 7px 14px #656565,
-                 -7px -7px 14px #9f9f9f;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #959595, #b2b2b2);
+    box-shadow:  5px 5px 25px #6c6c6c,
+                 -5px -5px 25px #e0e0e0;
     /* border-radius: 50%;
     background: #333;
     color: rgb(253, 253, 253);
@@ -224,10 +224,10 @@ footer #liens i{
     cursor: pointer; */
 }
 .btn-toggle:hover{
-    border-radius: 50px;
-    background: #828282;
-    box-shadow: inset 7px 7px 14px #656565,
-                inset -7px -7px 14px #9f9f9f;
+    border-radius: 50%;
+    background: #a6a6a6;
+    box-shadow: inset 5px 5px 25px #6c6c6c,
+                inset -5px -5px 25px #e0e0e0;
 }
 nav.dark {
     color: white;
